@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+/*----------------------------------------------------------------------*/
+html {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h1 {
+  padding-bottom: 18px;
+}
+body {
+  padding: 18px;
+  background-color: #fcfcfc;
+}
+.item-list,
+form {
+  display: block;
+  /*visual*/
+  background-color: #ededed;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  padding: 9px;
+  /*---------------------------*/
+  margin: auto;
+}
+input {
+  display: block;
+  font-size: 18px;
+  width: 95%;
+  /* spacing inside and around fields*/
+  margin-bottom: 9px;
+  justify-content: center;
+}
+
+select {
+  margin-bottom: 9px;
+  justify-content: center;
+}
+
+.forward {
+  padding-top: 16px;
+}
+
+/* For Links*/
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color:#00999e;
+   text-decoration: none;
+}
+
+/*---------------------------*/
+/* Item list*/
+.item-list ul {
+  display: block;
+    border-bottom:  solid #000;
+}
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.item-list p {
+  padding-right: 5%;
+  padding-top: 12%;
+}
+.item-list img {
+  max-width: 25%;
+  border: 1px solid;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.item-list h2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+/*---------------------------*/
+.pprocess li {
+  display:inline-block;
+  font-size: 12px;
+  padding-bottom: 9px;
+}
+.sidebar {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+html {
+flex-flow: row wrap;
+}
+.item-list,
+form {
+width: 440px; /* */
+}
+}
+
+@media screen and (min-width: 900px) {
+.sidebar {
+  display: block;
+  background-color: #ededed;
+  width: 40vw;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  height: 100%;
+  /*visual*/
+  box-shadow: 0px 0px 5px black;
+  /*---------------------------*/
+}
+body {
+  margin-right: 40vw;
+}
+
+}

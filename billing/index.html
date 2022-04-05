@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../screen.css"/>
+    <title>Billing</title>
+  </head>
+
+  <body>
+    <nav class="pprocess">
+      <ul>
+        <li><a href="../">Shopping Cart ></a></li>
+        <li>Billing ></li>
+        <li><a href="../card/">Card Information</a></li>
+      </ul>
+    </nav>
+
+    <header id="billing">
+    <h1>Billing Information</h1>
+    </header>
+    <form autocomplete="on">
+      <label for="fname"> First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="John"/>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Doe"/>
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Address"/>
+      <label for="address2">Address</label>
+      <input type="text" id="address2" name="address2" placeholder="Address 2"/>
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="City"/>
+      <label for="country">Country</label>
+      <select id="country" name="Country">
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Anguilla">Anguilla</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bonaire">Bonaire</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Canada">Canada</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="ElSalvador">El Salvador</option>
+        <option value="UnitedKingdom">United Kingdom</option>
+        <option value="UnitedStatesOfAmerica">United States of America</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+      </select>
+      <select id="state" name="fname">
+        <option value="illinois">IL</option>
+      </select>
+      <label for="zip">Zipcode</label>
+      <input type="text" id="zip" name="zip" placeholder="12345" pattern="[0-9]{5}"/>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+    </form>
+
+      <nav class="forward">
+        <button type="submit" id="toCard" name="toCard">Continue</button>
+      </nav>
+
+      <nav class="sidebar">
+        <h2>Link</h2>
+        <p>Text</p>
+      </nav>
+      <script src="../assets/js/site.js"></script>
+  </body>
+
+</html>
